@@ -34,6 +34,9 @@ const Home = () => {
         <button onClick={() => setZoom(zoom * 0.8)}>Zoom Out</button>
       </div>
       <MapCanvas />
+      <div style={{ marginTop: 10 }}>
+        {selectedCountry}
+      </div>
       {selectedCountry && stats && (
         <div style={{ marginTop: 10, border: '1px solid #ccc', padding: 10, maxWidth: 300 }}>
           <h3>{selectedCountry}</h3>
